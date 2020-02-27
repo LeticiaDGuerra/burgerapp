@@ -1,2 +1,2 @@
-INSERT INTO burger (name) VALUES ('Burger McBurgerton');
+INSERT INTO burgers (name) VALUES ('Burger McBurgerton');
 

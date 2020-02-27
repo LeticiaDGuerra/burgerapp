@@ -30,7 +30,7 @@ function objToSql(ob) {
         value = "'" + value + "'";
       }
       // e.g. {name: 'Lana Del Grey'} => ["name='Lana Del Grey'"]
-      // e.g. {sleepy: true} => ["sleepy=true"]
+      // e.g. {hungry: true} => ["hungry=true"]
       arr.push(key + "=" + value);
     }
   }
@@ -70,7 +70,7 @@ const orm = {
       cb(result);
     });
   },
-  // An example of objColVals would be {name: panther, sleepy: true}
+  // An example of objColVals would be {name: panther, hungry: true}
   update: function(table, objColVals, condition, cb) {
     const queryString = "UPDATE " + table;
 
@@ -103,5 +103,5 @@ const orm = {
   }
 };
 
-// Export the orm object for the model (cat.js).
+// Export the orm object for the model (burger.js).
 module.exports = orm;
