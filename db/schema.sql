@@ -1,8 +1,8 @@
--- ### Schema 
+-- schema 
 
--- DROP DATABASE IF EXISTS burger_db;
--- CREATE DATABASE burger_db;
--- USE burger_db;
+DROP DATABASE IF EXISTS burger_db;
+CREATE DATABASE burger_db;
+USE burger_db;
 
 -- CREATE TABLE burgers
 -- (
@@ -11,3 +11,5 @@
 -- 	eaten BOOLEAN DEFAULT false,
 -- 	PRIMARY KEY (id)
 -- );
+
+INSERT INTO burgers (name) VALUES ('Burgerton');

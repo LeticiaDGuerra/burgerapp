@@ -1,11 +1,11 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
-  $(".change-Hung").on("click", function(event) {
+  $(".change-hung").on("click", function(event) {
     const id = $(this).data("id");
-    const newHung = $(this).data("newHung");
+    const newHung = $(this).data("newhung");
 
     const newHungState = {
-      Hungy: newHung
+      hungry: newHung
     };
 
     // Send the PUT request.
@@ -14,9 +14,9 @@ $(function() {
       data: newHungState
     }).then(
       function() {
-        console.log("changed Hung to", newHung);
+        console.log("changed hung to", newHung);
         // Reload the page to get the updated list
-        loburgerion.reload();
+        location.reload();
       }
     );
   });
@@ -25,7 +25,7 @@ $(function() {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
-    const newburger = {
+    const newBurger = {
       name: $("#ca").val().trim(),
       hungry: $("[name=hungry]:checked").val().trim()
     };
@@ -33,12 +33,12 @@ $(function() {
     // Send the POST request.
     $.ajax("/api/burgers", {
       type: "POST",
-      data: newburger
+      data: newBurger
     }).then(
       function() {
         console.log("created new burger");
         // Reload the page to get the updated list
-        loburgerion.reload();
+        location.reload();
       }
     );
   });
@@ -53,7 +53,7 @@ $(function() {
       function() {
         console.log("deleted burger", id);
         // Reload the page to get the updated list
-        loburgerion.reload();
+        location.reload();
       }
     );
   });
