@@ -1,6 +1,7 @@
 li {
   padding: 5px;
   margin: 5px;
+  list-style: none;
 }
 
 .label {
@@ -20,4 +21,8 @@ li {
 body{
 background-color: #f3c9a3;
 text-align: center;
+}
+h1 {
+  font-family: cursive;
+  font-size: xx-large;
 }

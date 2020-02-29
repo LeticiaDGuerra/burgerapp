@@ -27,7 +27,7 @@ $(function() {
 
     var newBurger = {
       name: $("#ca").val().trim(),
-      eaten: $("[submit]").val().trim()
+      eaten: $("[name=eaten]").val().trim()
     };
 
     // Send the POST request.

@@ -1,19 +1,9 @@
 <h1>Burgers!</h1>
-<img src="./images/_-hamburger-dance-gif.gif" alt="burgerdance" width="320" height="320">
-<h2>burgers that are not eaten!</h2>
-<h2>Eat A Burger</h2>
-<form class="create-form">
+<img src="./images/_-hamburger-dance-gif.gif" alt="burgerdance" width="270" height="250">
 
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
 
-  <div class="form-group">
-    <input for="sleep" type="radio" name="eaten" value="1" submit> EAT!<button type="submit">Submit</button><br>
-  </div>
 
-  
+ <h2>burgers that are not eaten!</h2> 
 </form>
 <ul>
   {{#each burgers}}
@@ -33,4 +23,16 @@
   {{/each}}
 </ul>
 
+<h2>Eat A Burger</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">Burger Name:</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="sleep"></label>
+    <input type="radio" name="eaten" value="0"><button type="submit">Submit</button><br>
+  </div>
 
