@@ -2,6 +2,8 @@ li {
   padding: 5px;
   margin: 5px;
   list-style: none;
+  font-size: 20px;
+  font-family: cursive;
 }
 
 .label {
@@ -24,5 +26,10 @@ text-align: center;
 }
 h1 {
   font-family: cursive;
-  font-size: xx-large;
+  font-size: 50px;
+}
+h2 {
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 33px;
 }
