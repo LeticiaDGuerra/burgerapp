@@ -1,7 +1,6 @@
 <h1>Burgers!</h1>
 <img src="./images/_-hamburger-dance-gif.gif" alt="burgerdance" width="320" height="320">
-
-
+<h2>burgers that are not eaten!</h2>
 <h2>Eat A Burger</h2>
 <form class="create-form">
 
@@ -11,21 +10,11 @@
   </div>
 
   <div class="form-group">
-    <label for="sleep">EAT IT!</label><br>
-    <input type="radio" name="eaten" value="1"> EAT!<button type="submit">Submit</button><br>
-  </div> 
+    <input for="sleep" type="radio" name="eaten" value="1" submit> EAT!<button type="submit">Submit</button><br>
+  </div>
+
+  
 </form>
-
-<h2>burgers that are eaten!</h2>
-<ul>
-  {{#each burgers}}
-    {{#if eaten}}
-      {{> burgers/burger-block sleep=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>burgers that are not eaten!</h2>
 <ul>
   {{#each burgers}}
     {{#unless eaten}}
@@ -34,6 +23,14 @@
   {{/each}}
 </ul>
 
+<h2>burgers that are eaten!</h2>
 
+<ul>
+  {{#each burgers}}
+    {{#if eaten}}
+      {{> burgers/burger-block sleep=false}}
+    {{/if}}
+  {{/each}}
+</ul>
 
 
